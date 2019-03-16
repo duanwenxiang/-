@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/index/header.css">
+    <link rel="stylesheet" href="../css/index/section.css">
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/js-cookie/2.0.0/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="../js/lib/layui/css/layui.css">
+    <script src="../js/lib/layui/layui.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="logo">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552715522246&di=40f7cfb16c5862d3472719dff6130821&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161013%2F28a3906b589740adb894cfceb0b826eb_th.jpg" alt="">
+        </div>
+        <div class="header-right">
+            <p id="uname_token"></p>
+            <p id="OutBtn">退出</p>
+        </div>
+    </header>
+    <!-- 主体 -->
+    <section>
+        <!-- 侧边栏 -->
+        <div class="tab">
+            <div class="active">系统首页</div>
+            <div>职位列表</div>
+            <div>职位管理</div>
+        </div>
+        <!-- 右侧主体 -->
+        <div class="container">
+
+        </div>
+        <!-- 修改框 -->
+        <ul class="add add_re" id="add_re">
+            <li><p>职业名称</p><input type="text" id="job_re_name" placeholder="请输入职位名称"></li>
+            <li><p>薪资</p><input type="text" id="job_re_money" placeholder="薪资范围"></li>
+            <li><p>要求</p><input type="text" id="job_re_exp" placeholder="招聘要求"></li>
+            <li><p>公司名称</p><input type="text" id="company_re_name" placeholder="请输入公司名称"></li>
+            <li><p>上传公司logo</p><input type="file" id="logo_re"></li>
+            <li><button class="AddBtn_re">修改</button><button id="Out_re">关闭</button></li>
+        </ul>
+        <div id="page"></div>
+    </section>
+</body>
+</html>
+<script src="../js/js/index/header.js"></script>
+<script src="../js/js/index/admin.js"></script>
+<script src="../js/js/index/job.js"></script>
+<script src="../js/js/index/job-list.js"></script>
+<script src="../js/js/index/job-re.js"></script>
+<!-- <script>
+    layui.use('laypage', ()=>{
+        // 使用分页模块
+        let laypage = layui.laypage;
+        // 分页的配置项
+        laypage.render({
+            // 输入ID，让块成为分页形式
+            elem : 'page',
+            // 数据的总数是多少
+            count : 50,
+            // 每页显示的条数
+            limit : 3,
+            // 页面上出现的页码数
+            groups : 3,
+        })
+    })
+</script> -->

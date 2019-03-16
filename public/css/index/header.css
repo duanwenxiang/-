@@ -1,0 +1,4 @@
+header{height: 10%;background:#428bca;display: flex;justify-content:space-between;padding:0 30px;align-items: center;cursor:pointer;}
+header>.logo{width: 10%;}
+header>.logo>img{width:100%;}
+header>.header-right{width: 10%;display: flex;justify-content: space-between;align-items: center;color: #fff;cursor:pointer;}
